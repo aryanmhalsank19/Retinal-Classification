@@ -1,0 +1,6 @@
+Required Libraries
+Flask == 2.3.2
+torch == 2.0.1
+torchvision == 0.15.2
+Pillow == 9.5.0
+Werkzeug == 2.3.6
