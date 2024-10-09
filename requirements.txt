@@ -1,0 +1,16 @@
+Project utilizes the following Python libraries and frameworks:
+
+Flask (v2.3.2): A lightweight web framework used to build the web application.
+torch (v2.0.1): PyTorch, a deep learning framework used for loading and running the neural network model, optimized for MPS (Apple Silicon GPU).
+torchvision (v0.15.2): Provides tools to transform and preprocess images before passing them to the model.
+Pillow (v9.5.0): A library for image processing, used to load and manipulate retinal images.
+Werkzeug (v2.3.6): A utility library used by Flask to handle file uploads and other web-related functionality.
+Bootstrap (via CDN): A popular front-end framework for creating responsive and visually appealing web designs, used in HTML templates for user interface styling
+
+Versions:
+
+Flask==2.3.2
+torch==2.0.1
+torchvision==0.15.2
+Pillow==9.5.0
+Werkzeug==2.3.6

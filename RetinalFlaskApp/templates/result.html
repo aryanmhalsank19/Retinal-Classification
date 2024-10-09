@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retinal Health Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            color: #333;
+        }
+        .result {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .precautions {
+            color: #d9534f;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Retinal Health Result</h2>
+        <img src="{{ image_url }}" alt="Uploaded Retinal Image" class="img-fluid">
+        <p class="result">{{ result }}</p>
+        
+        {% if result == "Unhealthy Retina" %}
+        <div class="precautions">
+            <p>Precautions:</p>
+            <ul>
+                <li>Consider consulting an eye specialist.</li>
+                <li>Regular eye check-ups are essential.</li>
+                <li>Maintain a healthy diet rich in antioxidants.</li>
+                <li>Avoid smoking and excessive alcohol consumption.</li>
+                <li>Manage conditions like diabetes and hypertension.</li>
+            </ul>
+        </div>
+        {% endif %}
+        
+        <a href="/" class="btn btn-custom btn-block">Check Another Image</a>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
