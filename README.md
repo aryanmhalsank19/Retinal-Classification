@@ -7,7 +7,6 @@ This project is a web application that classifies retinal images as either **Hea
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Running the App](#running-the-app)
-5. [License](#license)
 
 ## Features
 - Upload retinal images to classify as **Healthy** or **Unhealthy**.
