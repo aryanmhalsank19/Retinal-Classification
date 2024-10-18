@@ -28,7 +28,7 @@ This project is a web application that classifies retinal images as either **Hea
    cd retinal-health-checker
 python -m venv venv
 
-### 6. Running the App
+### Running the App
 Explain how to run the application.
 
 ```markdown
